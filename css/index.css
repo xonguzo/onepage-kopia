@@ -248,6 +248,8 @@ section {overflow: hidden;}
       }
     .world:hover ul
       {opacity: 1;}
+      .world:first-child ul
+      {line-height: 32px;}
     .world:hover [class*=front]
       {height: 70px;
       z-index: 1;
