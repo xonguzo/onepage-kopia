@@ -1,0 +1,671 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'KimjungchulGothic-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html{scroll-behavior: smooth;}
+
+body
+  {font-family:'Raleway', 'noto sans kr', sans-serif;
+  color: #222;
+  font-size: 25px;
+  }
+body h1
+  {font-size: 40px;
+  text-align: center;
+  font-family: 'KimjungchulGothic-Bold';
+  }
+body h2
+  {font-size: 30px;}
+
+.more
+  {margin: auto;
+  display: block;
+  font-weight: normal;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  padding: 5px 0 0 15px;
+  border-radius: 30px;
+  }
+  .material-symbols-outlined
+    {position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: 0.5s;
+    }
+  .more:hover {font-weight: bold;}
+  .more:hover .material-symbols-outlined
+    {transform: rotate(360deg);}
+/* TOP-------------------------------------------------------- */
+  .top
+    {position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 52px;
+    color: #222;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    transition: 0.35s;
+    overflow: hidden; 
+    font-weight: 800;
+    z-index: 3;
+    }
+  .top:hover {transform: rotate(360deg);}
+  .top:hover:before {opacity: 1;}
+  .top:before
+    {content:'\eacf';
+    position: absolute;
+    display: block;
+    font-family: 'Material Icons Outlined';
+    /* border: 1px solid #000; */
+    width: inherit;
+    height: inherit;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 68, 255);
+    color: #eee;
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.35s;
+    }
+
+/* HEADER____________________________!!!!!! */
+  .util-menu
+    {width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    }
+  .util-menu li
+    {padding: 0 20px;
+    border-left: 2px solid #ccc;
+    font-size: 16px;
+    }
+  .util-menu li:first-child{border: none;}
+  .util-menu li:hover {font-weight: bold;}
+header
+  {width: 100%;
+  height: 150px;
+  display: flex;
+  background-color: #eef7ff;
+  }
+header .head
+  {width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  }
+  .logo 
+    {width: 200px;
+    height: 100px;
+    padding: 20px;
+    }
+  .logo img {width: 200px;}
+
+  .gnb {margin-right: 30px;}
+  .gnb li
+    {float:left;
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 25px;
+    border: 2px solid rgba(0, 68, 255, 0);
+    border-radius: 30px;
+    transition: 0.35s;
+    }
+  .gnb li:hover
+    {border: 2px solid rgb(99, 192, 255);
+    border-radius: 30px;
+    }
+  .gnb li:hover a
+    {color: rgb(0, 33, 94);}
+
+/* main!! --------------------------------------------*/
+main
+  {background: url(../image/main1.jpg) no-repeat center center;
+  background-size: cover;
+  border-bottom: 10px solid gold;
+  border-top: 5px solid rgb(86, 162, 233);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  transition: 0.4s;
+  color: #fff;
+  position: relative;
+  }
+main:hover
+  {background: url(../image/main2.jpg);
+  background-size: cover;
+  }
+main h1
+  {width: 900px;
+  margin: auto;
+  font-weight: 700;
+  position: absolute;
+  top: 100px;
+  background-color:rgba(0, 132, 255, 0.7);
+  padding: 20px;
+  }
+main h1 b 
+  {font-size: 60px;
+  color: yellow;
+  }
+/* SECTION__________________________!!!!!!! */
+section {overflow: hidden;}
+/* _______________________________introduce */
+#kopia
+  {width: 1200px;
+  margin: auto;
+  padding: 70px 0;
+  }
+#kopia .kopia 
+  {display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 10px;
+  }
+  #kopia .kopia h1
+    {color:rgb(0, 33, 94);
+    font-size: 60px;
+    padding-right: 20px;
+    margin-right: 20px;
+    }
+  .kopia div
+    {flex: 4;
+    padding: 20px;
+    background-color:rgb(222, 239, 255);
+    border-radius: 20px;
+    padding: 10px 20px;
+    }
+    #kopia h2
+    {padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px;
+    }
+
+    #kopia .project
+      {display: flex;
+      justify-content: space-between;
+      position: relative;
+      }
+    .world
+      {width: 280px;
+      height: 380px;
+      text-align: center;
+      border-radius: 30px;
+      position: relative;
+      transition: 0.5s;
+      }
+    .world [class*=front]
+      {position: absolute;
+      border-radius: 30px;
+      width: 280px;
+      height: 380px;
+      font-size: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      transition: 0.5s;
+      }
+    .front1{background-color: yellowgreen;}
+    .front2{background-color: rgb(21, 47, 248); 
+      color: #fff;}
+    .front3{background-color:crimson;
+      color: #fff;}
+    .front4{background-color:orange;}
+    .world ul
+      {position: absolute;
+      background-color: #fff;
+      border: 3px solid #ccc;
+      border-radius: 30px;
+      width: 100%;
+      height: inherit;
+      text-align: left;
+      text-indent: 40px;
+      top: 0;
+      left: 0;
+      padding-top: 90px;
+      box-sizing: border-box;
+      opacity: 0;
+      transition: 0.5s;
+      }
+    .world:hover ul
+      {opacity: 1;}
+    .world:hover [class*=front]
+      {height: 70px;
+      z-index: 1;
+      }
+/* _________________________________program */
+#program
+  {width: 1200px;
+  margin: auto;
+  padding: 100px 0 50px 0;
+  background-color: #eee;
+  border-radius: 30px;
+  }
+#program h1
+  {text-align: center;
+  padding-bottom: 50px;
+  }
+#program .category
+  {display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  height: 300px;
+  }
+
+  .category .boss, .intern
+    {width: 500px;
+    height: 300px;
+    }
+  .category h2
+    {background-color: wheat;
+    color: #222;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 30px 30px 30px 0;
+    }
+  .boss div, .intern div
+    {font-size: 25px;
+    line-height: 40px;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 200px;
+    border: 3px solid #ddd;
+    border-radius: 0 30px 30px 0;
+    transition: 0.35s;
+    }
+  .boss:hover div, .intern:hover div
+    {transform: scale(1.1);
+    transform-origin: left top;
+    border-radius: 0;
+    background-color:orange;
+    border: none;
+    color: #fff;
+    }
+
+  #program h2:nth-child(3)
+    {text-align: left;
+    text-indent: 10px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #333;
+    width: 950px;
+    margin: 20px auto;
+    font-size: 35px;
+    }
+  .job h2
+    {text-align: center;
+    padding-bottom: 20px;
+    }
+  .job {margin: auto;}
+  .job ul
+    {width: 1000px;
+    margin: 0 auto 20px;
+    }
+  .job ul li
+    {padding: 10px;
+    background-color: rgb(154, 215, 255);
+    border-radius: 30px;
+    margin: 10px;
+    text-indent: 20px;
+    transition: 0.5s;
+    }
+    .job li:hover
+      {background-color: orange;}
+/* __________________________________notice */
+#notice
+  {/* border: 1px solid #000; */
+  width: 1200px;
+  margin: auto;
+  padding: 100px 0;
+  }
+#notice h1
+  {text-align: center;
+  padding-bottom: 50px;
+  }
+#notice .notice h2
+  {text-align: left;
+  text-indent: 10px;
+  padding-bottom: 10px;
+  width: 950px;
+  margin: auto;
+  }
+  .notice {margin: auto;}
+  .notice ul
+    {/* border: 1px solid #000; */
+    width: 1000px;
+    margin: 0 auto 20px;
+    }
+  .notice ul li
+    {padding: 10px;
+    background-color: rgb(154, 215, 255);
+    border-radius: 30px;
+    margin: 10px;
+    text-indent: 20px;
+    transition: 0.5s;
+    }
+    .notice  li:hover
+      {background-color: rgb(0, 132, 255);
+      color: #fff;
+      }
+
+/* ___________________________________propa */
+
+.propaganda
+  {display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1100px;
+  margin: auto;
+  }
+.propa
+  {width: 520px;/*  border: 1px solid #000; */ }
+.propaganda h2
+  {text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid salmon;
+  }
+  .propa .ganda
+    {display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+  .ganda div:first-child,
+  .ganda div:last-child
+    {width: 250px;
+    height: 315px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.35s;}
+  .ganda div:first-child
+    {background: url(../image/propa1.jpg) no-repeat center center;
+    background-size: cover;
+    }
+  .ganda div:last-child
+    {background: url(../image/propa2.jpg) no-repeat center center;
+    background-size: cover;
+    }
+    .ganda div:first-child:before,
+    .ganda div:last-child:before
+      {background-color: rgba(0,0,0,0.5);
+      display: flex;
+      width: inherit;
+      height: inherit;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      font-size: 30px;
+      transition: 0.35s;
+      opacity: 0;}
+    .ganda div:first-child:before
+      {content: '농촌진흥청, 과테말라에 농업 한류 꽃피운다';
+      position: absolute;
+      }
+    .ganda div:last-child:before
+      {content: '김용환 KOPIA 소장, 캄보디아 총리 훈장 수훈';
+      position: absolute;
+      }
+  .ganda div:hover:before
+    {opacity: 1;
+    border-radius: 30px;
+    }
+  .ganda div:hover
+  {border-radius: 30px;}
+    .propa a
+      {display: inline-block;}
+
+/* DOCUMENT__________________________!!!!!! */
+#document
+  {/* border: 1px solid #000; */
+  width: 1200px;
+  margin: 50px auto;
+  padding: 100px 0 50px 0;
+  background-color: #eee;
+  border-radius: 30% 30% 30px 30px;
+  }
+.document
+  {display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  }
+.document div{perspective: 1200px;}
+.document [class*=book]
+  {width: 350px;
+  height: 500px;
+  display: block;
+  border-radius: 30px;
+  margin-top: 20px;
+  transition: 0.35s;
+  }
+.book1
+  {background: url(../image/성과자료집.png) no-repeat center center;
+  background-size: cover;
+  }
+.book2
+  {background: url(../image/기술서.jpg) no-repeat center center;
+  background-size: cover;
+  }
+.book3
+  {background: url(../image/기타단행본.PNG) no-repeat center center;
+  background-size: cover;
+  }
+  .document [class*=book]:hover
+    {transform: rotateY(30deg);
+    border-radius: 0;
+    }
+
+/* _____________________________________FAQ */
+#faq
+  {width: 1200px;
+  margin: auto;
+  padding: 125px 0 50px 0;
+  text-align: center;
+  }
+#faq ul
+  {width: 1000px;
+  height: 500px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+#faq ul li div
+  {background-color: rgb(222, 239, 255);
+  padding: 10px;
+  border-radius: 30px;
+  position: relative;
+  }
+#faq ul li
+  {flex: 1;
+  text-indent: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.4s;
+  }
+
+#faq ul li:nth-child(-n+6):before
+  {position: absolute;
+  display: block;
+  background-color:rgb(222, 239, 255);
+  padding: 60px 20px 0 0 ;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  box-sizing: border-box;
+  border-radius: 30px; 
+  transition: 0.4s;
+  }
+  
+#faq ul li:hover
+  {flex: 3;}
+#faq ul li:hover div 
+  {background-color:rgb(0, 33, 94);
+  color: white;}
+  #faq ul li:hover:before
+    {color: #222;
+    opacity: 1;
+    }
+  #faq div:hover li{flex:3;}
+#faq ul li:nth-child(1):before
+  {content: '당초 휴일로 부터 7일 이내의 다른 날로 휴일로 대체할 수 있습니다. (대체휴무) 단, 초과근무 또는 주말근무를 할 경우 소장님께 사전승인을 받아야합니다.';}
+  #faq ul li:nth-child(2):before
+  {content: '연수생의 휴일은 1개월 개근 시 1일(최대5일)이 발생하며, ITCC 복무관리->근무상황신청에서 소장님께 사전에 결재를 받고 월별 근무상황부에 기록 후 사용합니다.';}
+  #faq ul li:nth-child(3):before
+  {content: '개인의 연가를 사용하여 귀국 일을 앞당기는 것은 불가합니다.';
+  }
+#faq ul li:nth-child(4):before
+  {content: '근무상황신청 건은 아니지만, 비상시 신속한 대응을 위한 연락체계의 유지를 위하여 사전에 행선지, 연락자 및 연락처, 출발 및 귀가 예정시간, 사유를 소장에게 알려야 합니다.';
+  }
+#faq ul li:nth-child(5):before
+  {content: '범죄,수사경력 회보서는 crims.police.go.kr 접속 또는 본인이 직접 근처 경찰서를 통해 발급 가능합니다. - 인터넷 발급 시 발급사유는 예) 에콰도르 비자 발급용 등으로 작성하시면 됩니다.';
+  }
+#faq ul li:nth-child(6):before
+  {content: 'KOPIA 센터 파견 전 현지 주재국에 파견 영문서신 발송 및 비자 발급에 필요한 영문 초청장 수령 등을 위해 필요합니다.';
+  }
+
+/* MAP__________________________________!!! */
+.road
+  {display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  }
+.road iframe
+  {width: 600px;
+  height: 650px;
+  }
+.road div
+  {text-align: left;
+  width: 570px;
+  height: 660px;
+  font-size: 21px;
+  letter-spacing: 0px;
+  }
+  .road div b:not(:last-child)
+    {color:rgb(0, 58, 216);}
+.road h2
+  {margin-bottom: 10px;}
+/* ______________banner */
+#gov
+  {position: relative;
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto 50px;
+  overflow: hidden;
+  /* border: 1px solid #000; */
+  }
+#gov ul
+  {position: absolute;
+  width: 5000px;
+  height: 80px;
+  float: left;
+  }
+  #gov .gov1{animation: 40s gov1 linear infinite;}
+  #gov .gov2{animation: 40s gov2 linear infinite;}
+@keyframes gov1 
+  {0%
+    {transform: translateX(0);}
+  50%
+    {transform: translateX(-1540px);}
+  50.01%
+    {transform: translateX(1540px);}
+  100%
+    {transform: translateX(0);}
+  }
+@keyframes gov2
+  {0%
+    {transform: translateX(1540px);}
+  100%
+    {transform: translateX(-1560px);}
+  }
+#gov li
+  {/* border: 1px solid #000; */
+  width: 200px;
+  height: 80px;
+  margin-right: 20px;
+  float: left;
+  }
+  [class*=gov] li:first-child
+    {background: url(../image/banner1.gif) no-repeat center center;
+    background-size: cover;
+    }
+  [class*=gov] li:nth-child(2)
+    {background: url(../image/banner2.gif) no-repeat center center;
+    background-size: cover;
+    }
+  [class*=gov] li:nth-child(3)
+    {background: url(../image/banner3.gif) no-repeat center center;
+    background-size: cover;
+    }
+  [class*=gov] li:nth-child(4)
+    {background: url(../image/banner4.gif) no-repeat center center;
+    background-size: cover;
+    }
+    [class*=gov] li:nth-child(5)
+    {background: url(../image/banner5.gif) no-repeat center center;
+    background-size: cover;
+    }
+  [class*=gov] li:nth-child(6)
+    {background: url(../image/banner6.gif) no-repeat center center;
+    background-size: cover;
+    }
+  [class*=gov] li:nth-child(7)
+    {background: url(../image/banner7.gif) no-repeat center center;
+    background-size: cover;
+    }
+
+  /* 
+FOOTER____________________________!!!!!! */
+footer
+  {width: 100%;
+  height: 100px;
+  font-size: 16px;
+  background-color: #ccc;
+  }
+  footer .foot
+  {display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  }
+  footer .rda
+    {width: 250px;
+    height: 75px;
+    display: block;
+    background: url(../image/농촌진흥청.png) no-repeat center center;
+    background-size: cover;
+    margin-right: 20px;
+    }
+  address
+    {font-style: normal;}
