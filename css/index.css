@@ -588,7 +588,7 @@ section {overflow: hidden;}
 #gov ul
   {position: absolute;
   width: 5000px;
-  height: 80px;
+  height: 40px;
   float: left;
   }
   #gov .gov1{animation: 40s gov1 linear infinite;}
@@ -597,22 +597,22 @@ section {overflow: hidden;}
   {0%
     {transform: translateX(0);}
   50%
-    {transform: translateX(-1540px);}
+    {transform: translateX(-1100px);}
   50.01%
-    {transform: translateX(1540px);}
+    {transform: translateX(1100px);}
   100%
     {transform: translateX(0);}
   }
 @keyframes gov2
   {0%
-    {transform: translateX(1540px);}
+    {transform: translateX(1100px);}
   100%
-    {transform: translateX(-1560px);}
+    {transform: translateX(-1100px);}
   }
 #gov li
   {/* border: 1px solid #000; */
-  width: 200px;
-  height: 80px;
+  width: 137px;
+  height: 58px;
   margin-right: 20px;
   float: left;
   }
