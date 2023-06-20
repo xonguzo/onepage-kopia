@@ -11,10 +11,10 @@
 html{scroll-behavior: smooth;}
 html::-webkit-scrollbar{width: 10px;}
 html::-webkit-scrollbar-thumb
-  {background-color: rgba(0,0,0,0.5);
+  {background-color: rgba(75, 110, 150, 0.5);
   border-radius: 5px;
   }
-html::-webkit-scrollbar-track{background-color: rgba(73, 12, 53, 0.5);}
+html::-webkit-scrollbar-track{background-color: rgba(167, 187, 230, 0.5);}
 
 body
   {font-family:'Raleway', 'noto sans kr', sans-serif;
